@@ -3,25 +3,27 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 	</head>
 	<body>
 		<header>
-			<h1 id="full-name">CONNIE LIU</h1>
+			<h1 id="full-name"><b>CONNIE LIU</b></h1>
 			<nav>
 				<ul>
-					<li class="selected"><a href="home.html">PROJECTS</a></li>
+					<li><a href="home.html">PROJECTS</a></li>
 					<li><a href="personal.html">PERSONAL</a></li>
 					<li><a href="#">RESUME</a></li>
 				</ul>
-				<div class="icon" id="icontwitter">
-					<a href = "https://twitter.com/ckliu95"><img src = "twitter.jpg" width = "30" height = "30"></a>
+				<div class="icon">
+					<a href = "https://twitter.com/ckliu95"><img id="social-icon" src = "twitter.jpg" width = "30" height = "30"></a>
 				</div>
-				<div class="icon" id="iconlinkedin">
-					<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img src = "linkedin.png" width = "30" height = "30"></a>
+				<div class="icon">
+					<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img id="social-icon" src = "linkedin.png" width = "30" height = "30"></a>
 
 				</div>
-				<div class="icon" id="icongmail">
-					<img src = "gmail.png" width = "30" height = "30">
+				<div class="icon">
+					<img id="social-icon" src = "gmail.png" width = "30" height = "30">
 				</div>
 			</nav>
 		</header>
@@ -30,4 +32,11 @@
 		</div>
 	</body>
 </html>
+
+<script>
+	$(window).resize(function() {
+		var viewportWidth = $(window).width()
+		$(".project_content").width(viewportWidth/1.73);
+	});
+</script>
 

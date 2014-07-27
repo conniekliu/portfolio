@@ -3,6 +3,8 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -14,25 +16,25 @@
 					<li><a href="#">RESUME</a></li>
 				</ul>
 				<div class="icon" id="icontwitter">
-					<a href = "https://twitter.com/ckliu95"><img src = "twitter.jpg" width = "30" height = "30"></a>
+					<a href = "https://twitter.com/ckliu95"><img id="social-icon" src = "twitter.jpg" width = "30" height = "30"></a>
 				</div>
 				<div class="icon" id="iconlinkedin">
-					<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img src = "linkedin.png" width = "30" height = "30"></a>
+					<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img id="social-icon" src = "linkedin.png" width = "30" height = "30"></a>
 
 				</div>
 				<div class="icon" id="icongmail">
-					<img src = "gmail.png" width = "30" height = "30">
+					<img id="social-icon" src = "gmail.png" width = "30" height = "30">
 				</div>
 			</nav>
 		</header>
 		<div class="project_content">
 			<h1 class="center"> <b> "Helping the blind read text on the go." </b> </h1>
 			<h2> The FingerReader makes it possible </h2>
-			<img class="normal centered" src = "eyering_final.jpg" align="middle" width = "400" height = "400">
+			<img class="normal centered" src = "eyering_final.jpg" align="middle" width = "400" height = "400" id= "fingerreader-1">
 			<p> The FingerReader is a <b> text-reading assistive device for the blind. </b> It is designed to be a portable device that can assist blind people to read and scan text in everyday situations. </p>
 			<p> With just the point of a finger, visually impaired users can have menus, books, forms, and so much more read to them in real time. The device allows the user the freedom to read full paragraphs, scan through lines to identify content of interest, and navigate through multiple pages and types of text with ease. </p>
 			<p> The device provides vibration and tonal feedbacks to help guide the user through a page of text. A vibration signal is triggered at the beginning and end of every line, and tones help alert the user whenever he or she strays off of the line. </p>
-			<img class="normal centered" src = "fingerreader_cad.png" align="middle" style="max-width:65%;">
+			<img class="normal centered" id= "fingerreader-2" src = "fingerreader_cad.png" align="middle" style="max-width:65%;">
 			<p> The ring is a dual-material 3D printed device that allows for sizing adjustments and vibration dampening using a rubbery material on both sides of the ring. Through multiple user studies with blind and visually impaired participants, the design was tailored to maximize user comfort and distinguishability of haptic feedbacks. An on-board microcontroller was programmed to enable vibration feedbacks and LEDs for reading in dark areas. A camera on the device streams a video of the text in view to be processed and translated from text to speech so blind users can hear exactly what is on the page in front of them. </p> </br>
 			<h2 class="purple"> Interested in learning more? Check out these articles! </h2>
 			<p class="center"> <a href="http://www.huffingtonpost.com/2014/07/08/fingerreader-read-blind-mit_n_5565898.html?ncid=fcbklnkushpmg00000042"> http://www.huffingtonpost.com/2014/07/08/fingerreader-read-blind-mit_n_5565898.html?ncid=fcbklnkushpmg00000042 </a></p>
@@ -42,3 +44,13 @@
 	</body>
 </html>
 
+<script>
+	$(window).resize(function() {
+		var viewportWidth = $(window).width()
+		var newImageDimension = String(viewportWidth/3.24);
+		$(".project_content").width(viewportWidth/1.73);
+		for (var i=0; i<=2; i++) {	
+			$("#fingerreader-"+i).attr('width', newImageDimension);
+			$("#fingerreader-"+i).attr('height', newImageDimension);
+	});
+</script>
