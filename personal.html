@@ -27,16 +27,23 @@
 				</div>
 			</nav>
 		</header>
-		<div class="project_content">
-			<h1 class="center"> <b> WELCOME TO MY SITE </b> </h1>
+		<div class="project_content" id="personal_content">
+			<h1 class="center" id="project_content_title"><b>WELCOME TO MY SITE</b></h1>
 		</div>
 	</body>
 </html>
 
 <script>
-	$(window).resize(function() {
-		var viewportWidth = $(window).width()
+	$(document).ready(function() {
+		var viewportWidth = $(window).width();
 		$(".project_content").width(viewportWidth/1.73);
+	});
+
+	$(window).resize(function() {
+		var viewportWidth = $(window).width();
+		$(".project_content").width(viewportWidth/1.73);
+		var fontSize = String(viewportWidth*0.023)+"px";
+		$("#project_content_title").css("font-size", fontSize);
 	});
 </script>
 

@@ -114,9 +114,13 @@ img.centered {
 }
 
 .project_content {
-/*	width: 750px;*/
 	float: left;
 	background-color: none;
+	position: absolute;
 }
 
 #full-name { font-weight: bold; }
+
+#personal_content {
+	margin-left: 300px;
+}
