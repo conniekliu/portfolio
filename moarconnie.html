@@ -3,6 +3,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 	</head>
@@ -29,13 +30,18 @@
 			</nav>
 		</header>
 		<div class="project_content" id="personal_content">
-			<h1 class="center" id="project_content_title"><b>WELCOME TO MY SITE</b></h1>
+			<h1 class="center" id="project_content_title"><b>WELL HELLO THERE</b></h1>
 
-			<p id="project_content_text1"> Looks like you've stumbled upon my corner of the web! Chances are you know me to some extent, either as a friend or as a potential employer (please hire me ;D). In any case, allow me to introduce myself. I'm Connie and I'm a mechanical engineer at MIT with a huge interest in education and design. There's a lot of other things that capture my attention (ie: cooking, eating, ukulele-ing, <a href = "http://www.huffingtonpost.com/2013/01/07/quokka-happiest-animal-in-world_n_2426133.html">quokkas</a>, TED talks, photography, street fairs, exploring, puns, etc.) </p>
+			<p id="project_content_text"> You're a tenacious one you ;) Anyhow, you've made it this far so I might as well grant you what I promised. <b> An abundance of things that are so Connie that they transcend all things Connie. </b> Or in more understandable terms, a few of my favorite things! Browse at your leisure and <a> hit me up </a> if you are interested in hearing more about my thoughts, recommendations, or musings for any of the below. So without further ado...Enjoy! </p>
 
-			<p id="project_content_text2"> Perhaps I'm overly excitable. Maybe I am too rash in my decisions. There may be more than just a little about me that's different from the norm. But my excitability makes me passionate, my eagerness helps me take risks, and my quirks keep me thinking outside of the box. </p>
 
-			<p id="project_content_text3"> Still craving <a href = "moarconnie.html">more</a>? I can't blame you. There may or may not be a link to more Connie goodness than you can handle. </p>
+			<h2 class = "purple"> <b> My Youtube Channel! </b></h2>
+ 			<iframe class = "centered" width="420" height="315" src="http://www.youtube.com/embed/t-NoBF_SgIA" frameborder="0" allowfullscreen></iframe>
+
+ 			<h2 class = "purple"> <b> Books that Changed My Life </b></h2>
+
+ 			<h2 class = "purple"> <b> Talks/Videos that Changed My Life </b></h2>
+
 		</div>
 	</body>
 </html>
@@ -52,9 +58,7 @@
 		var fontSize = String(viewportWidth*0.023)+"px";
 		var fontSize2 = String(viewportWidth*0.012)+"px";
 		$("#project_content_title").css("font-size", fontSize);
-		for (var i=0; i<=3; i++) {	
-			$("#project_content_text"+i).css("font-size", fontSize2);
-		}
+		$("#project_content_text").css("font-size", fontSize2);
 	});
 </script>
 

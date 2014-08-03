@@ -3,6 +3,8 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -26,16 +28,38 @@
 			</nav>
 		</header>
 		<div class="project_content">
-			<h1 class="center"> <b> LINE FOLLOWING ROBOT </b> </h1>
+			<h1 id = "project_content_title" class="center"> <b> LINE FOLLOWING ROBOT </b> </h1>
 			<h2 class="purple"> An autonomous robot with attitude </h2>
-			<img class="normal centered" src = "Line_Robot 1.jpg" align="middle" width = "400" height = "400">
-			<p>  </p>
-			<p>  </p>
-			<p>  </p>
-			<img class="normal centered" src = "#" align="middle" style="max-width:65%;">
-			<p>  </p>
+			<img class="normal centered" id = "linerobot-1" src = "Line_Robot 1.jpg" align="middle" style="max-width:65%;">
+			<p id = "project_content_text_linerobot1"> Our final project for 2.678, MIT's Electronics for Mechanical Systems class, is to build a, autonomous line following robot that navigates a maze without previous knowledge of the layout. With this challenge, we were given an Arduino, an infrared sensor array, and a robot frame. The maze consisted of a 1 inch wide black line that the robots were to sense and follow. However, obstacles were designed into the track, such as Figure 8 loops, garbled lines, blank spots, and more. Robot successfulness was judged by speed, accuracy, and ability to get through the whole track.</p>
+			<p id = "project_content_text_linerobot2"> We were able complete the source in 1:37, ranking in the top half of high-scoring robots. However, in future iterations of the robot, I would have included a more efficient search algorithm that utilized path prediction rather than the inefficient 180 scan used for this version.</p>
+			<img class="normal centered" id = "linerobot-2" src = "Line_Robot 2.jpg" align="middle" style="max-width:65%;">
 
 		</div>
 	</body>
 </html>
 
+<script>
+	$(document).ready(function() {
+		var viewportWidth = $(window).width();
+		$(".project_content").width(viewportWidth/1.73);
+	});
+
+	$(window).resize(function() {
+		var viewportWidth = $(window).width()
+		var newImageDimension = String(viewportWidth/3.24);
+		var fontSize = String(viewportWidth*0.023)+"px";
+		var fontSize2 = String(viewportWidth*0.012)+"px";
+		var fontSize3 = String(viewportWidth*0.015)+"px";
+		$(".project_content").width(viewportWidth/1.73);
+		for (var i=0; i<=2; i++) {	
+			$("#linerobot-"+i).attr('width', newImageDimension);
+			$("#linerobot-"+i).attr('height', newImageDimension);
+		}
+		for (var i=0; i<=2; i++) {	
+			$("#project_content_text_linerobot"+i).css("font-size", fontSize2);
+		}
+		$("#project_content_title").css("font-size", fontSize);
+		$("#project_content_subtext").css("font-size", fontSize3);
+	});
+</script>

@@ -3,6 +3,8 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -25,17 +27,41 @@
 				</div>
 			</nav>
 		</header>
-		<div class="project_content">
-			<h1 class="center"> <b> FAST AND FURIOUS </b> </h1>
-			<h2 class="purple"> with a dash of love (handles) </h2>
-			<img class="normal centered" src = "lovehandles_final.jpg" align="middle" width = "400" height = "400">
-			<p> This is Lovehandles. Meet him (her?). Love him. Cherish him. Because that right there was the product of months of sweat, tears, and well, love. </p>
-			<p> Packed in that small(ish) exterior is quite a powerhouse of 36V of battery, a ___ motor, and enough power to max out at a solid 20 mph with a medium-female-sized rider. </p>
-			<p> We were posed with a few design constraints:our car could have no more than four 12V batteries, it could not exceed 20 mph (for safety reasons), it needed to be able to carry a single rider, and we needed to stay within a budget of $400. With these parameters in mind, we set out on our merry ways to conceptualize, design, and finally build what is now Lovehandles. </p>
-			<img class="normal centered" src = "#" align="middle" style="max-width:65%;">
-			<p>  </p>
+		<div class="project_content" id="personal_content">
+			<h1 class="center" id = "project_content_title_lovehandles"> <b> FAST AND FURIOUS </b> </h1>
+			<h2 class="purple" id ="project_content_subtext_lovehandles"> with a dash of love (handles) </h2>
+			<img class="normal centered" id = "lovehandles-1" src = "lovehandles_final.jpg" align="middle" style="max-width:65%;">
+			<p id = "project_content_text_lovehandles1" > This is Lovehandles. Meet him (her?). Love him. Cherish him. Because that right there was the product of months of sweat, tears, and well, love. </p>
+			<p id = "project_content_text_lovehandles2"> Packed in that small(ish) exterior is quite a powerhouse of 36V of battery, a ___ motor, and enough power to max out at a solid 20 mph with a medium-female-sized rider. </p>
+			<p id = "project_content_text_lovehandles3"> We were posed with a few design constraints:our car could have no more than four 12V batteries, it could not exceed 20 mph (for safety reasons), it needed to be able to carry a single rider, and we needed to stay within a budget of $400. With these parameters in mind, we set out on our merry ways to conceptualize, design, and finally build what is now Lovehandles. </p>
+			<img class="normal centered" id ="lovehandles-2" src = "#" align="middle" style="max-width:65%;">
+			<p id = "project_content_text_lovehandles4"> As you might expect with two novice go kart builders, Rachel and i hit many roadblocks along the way as we built our baby. </p>
 
 		</div>
 	</body>
 </html>
 
+<script>
+	$(document).ready(function() {
+		var viewportWidth = $(window).width();
+		$(".project_content").width(viewportWidth/1.73);
+	});
+
+	$(window).resize(function() {
+		var viewportWidth = $(window).width()
+		var newImageDimension = String(viewportWidth/3.24);
+		var fontSize = String(viewportWidth*0.023)+"px";
+		var fontSize2 = String(viewportWidth*0.012)+"px";
+		var fontSize3 = String(viewportWidth*0.015)+"px";
+		$(".project_content").width(viewportWidth/1.73);
+		for (var i=0; i<=2; i++) {	
+			$("#lovehandles-"+i).attr('width', newImageDimension);
+			$("#lovehandles-"+i).attr('height', newImageDimension);
+		}
+		for (var i=0; i<=4; i++) {	
+			$("#project_content_text_lovehandles"+i).css("font-size", fontSize2);
+		}
+		$("#project_content_title_lovehandles").css("font-size", fontSize);
+		$("#project_content_subtext_lovehandles").css("font-size", fontSize3);
+	});
+</script>
