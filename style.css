@@ -1,7 +1,7 @@
 h1 {
 	color: #3D007A;
 	font-family: "Montserrat", sans-serif;
-	font-size: 28px;
+	font-size: 26px;
 }
 
 h1.center {
@@ -10,7 +10,7 @@ h1.center {
 
 h1.name {
 	font-size: 42px;
-	margin:5px;
+	margin:3px;
 }
 
 h2 {
@@ -21,6 +21,7 @@ h2 {
 
 h2.purple {
 	color: #3D007A;
+	padding-top: 15px;
 }
 
 ul { list-style-type: none;
@@ -45,7 +46,7 @@ li {
 	line-height: 150%;
 	list-style-type: none;
 	display: inline;
-	padding: 10px;
+	padding: 15px;
 }
 
 p {
@@ -72,7 +73,8 @@ img:hover {
 
 img.normal {
 	opacity: 1.0;
-	filter: alpha(opacity=100);	
+	filter: alpha(opacity=100);
+	padding: 20px;	
 }
 
 img.centered {
@@ -87,6 +89,7 @@ iframe.centered {
 
 #social-icon {
 	border-radius: 50%;
+	width: 30px;
 }
 
 .icon {
@@ -94,7 +97,7 @@ iframe.centered {
 }
 
 .wrapper {
-	max-width: 70%;
+	max-width: 80%;
 	margin: 20px auto;
 }
 
@@ -104,22 +107,18 @@ iframe.centered {
 }
 
 .box {
-/*	width: 31.4%;
-	height: 31.4%;*/
-	margin-bottom: 15px;
-/*	margin-right: 15px;*/
-	background-color: none;
-}
 
-.threeboxes { 
-	text-align: center; 
-	margin: 20px 0;
 }
 
 .project_content {
 	max-width: 70%;
 	margin: 20px auto;
 	text-align: center;
+}
+
+#project_content_title {
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #full-name { font-weight: bold; }
@@ -131,13 +130,14 @@ iframe.centered {
 .header-wrapper {
 	text-align: center;
 	margin: 20px auto;
+	width: 300px;
 	padding-bottom: 5px;
 	padding-top: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 	border-style: solid;
-    border-width: medium;
-    border-color: black;
+    border-width: 4px;
+    border-color: #21211B;
 }
 
 .container {
@@ -152,13 +152,14 @@ iframe.centered {
 
 .footer {
 	text-align: center;
-	margin: 20px auto;
+	margin: 0 auto;
 }
 
 .iconbar {
-	max-width: 180px;
-	margin: 20px auto;
+	width: 175px;
+	margin: 0 auto;
 	text-align: center;
+	padding: 20px;
 }
 
  
