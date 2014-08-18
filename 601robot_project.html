@@ -46,15 +46,15 @@
 	$(window).resize(function() {
 		var viewportWidth = $(window).width()
 		var newImageDimension = String(viewportWidth/3.24);
-		var fontSize = String(viewportWidth*0.023)+"px";
-		var fontSize2 = String(viewportWidth*0.012)+"px";
-		var fontSize3 = String(viewportWidth*0.015)+"px";
+		// var fontSize = String(viewportWidth*0.023)+"px";
+		// var fontSize2 = String(viewportWidth*0.012)+"px";
+		// var fontSize3 = String(viewportWidth*0.015)+"px";
 		$(".project_content").width(viewportWidth/1.73);
 
 		$("#601robot").attr('width', newImageDimension);
 		$("#601robot").attr('height', newImageDimension);
-		$("#project_content_title_601").css("font-size", fontSize);
-		$("#project_content_text_601").css("font-size", fontSize2);
-		$("#project_content_subtext_601").css("font-size", fontSize3);
+		// $("#project_content_title_601").css("font-size", fontSize);
+		// $("#project_content_text_601").css("font-size", fontSize2);
+		// $("#project_content_subtext_601").css("font-size", fontSize3);
 	});
 </script>

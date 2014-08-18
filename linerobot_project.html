@@ -48,18 +48,18 @@
 	$(window).resize(function() {
 		var viewportWidth = $(window).width()
 		var newImageDimension = String(viewportWidth/3.24);
-		var fontSize = String(viewportWidth*0.023)+"px";
-		var fontSize2 = String(viewportWidth*0.012)+"px";
-		var fontSize3 = String(viewportWidth*0.015)+"px";
+		// var fontSize = String(viewportWidth*0.023)+"px";
+		// var fontSize2 = String(viewportWidth*0.012)+"px";
+		// var fontSize3 = String(viewportWidth*0.015)+"px";
 		$(".project_content").width(viewportWidth/1.73);
 		for (var i=0; i<=2; i++) {	
 			$("#linerobot-"+i).attr('width', newImageDimension);
 			$("#linerobot-"+i).attr('height', newImageDimension);
 		}
-		for (var i=0; i<=2; i++) {	
-			$("#project_content_text_linerobot"+i).css("font-size", fontSize2);
-		}
-		$("#project_content_title").css("font-size", fontSize);
-		$("#project_content_subtext").css("font-size", fontSize3);
+		// for (var i=0; i<=2; i++) {	
+		// 	$("#project_content_text_linerobot"+i).css("font-size", fontSize2);
+		// }
+		// $("#project_content_title").css("font-size", fontSize);
+		// $("#project_content_subtext").css("font-size", fontSize3);
 	});
 </script>

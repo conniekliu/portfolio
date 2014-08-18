@@ -48,16 +48,16 @@
 	$(window).resize(function() {
 		var viewportWidth = $(window).width()
 		var newImageDimension = String(viewportWidth/3.24);
-		var fontSize = String(viewportWidth*0.023)+"px";
-		var fontSize2 = String(viewportWidth*0.012)+"px";
-		var fontSize3 = String(viewportWidth*0.015)+"px";
+		// var fontSize = String(viewportWidth*0.023)+"px";
+		// var fontSize2 = String(viewportWidth*0.012)+"px";
+		// var fontSize3 = String(viewportWidth*0.015)+"px";
 		$(".project_content").width(viewportWidth/1.73);
 		for (var i=0; i<=2; i++) {	
 			$("#artbot").attr('width', newImageDimension);
 			$("#artbot").attr('height', newImageDimension);
 		}
-		$("#project_content_title_artbot").css("font-size", fontSize);
-		$("#project_content_text_artbot").css("font-size", fontSize2);
-		$("#project_content_subtext_artbot").css("font-size", fontSize3);
+		// $("#project_content_title_artbot").css("font-size", fontSize);
+		// $("#project_content_text_artbot").css("font-size", fontSize2);
+		// $("#project_content_subtext_artbot").css("font-size", fontSize3);
 	});
 </script>
