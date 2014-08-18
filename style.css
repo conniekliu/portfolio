@@ -92,6 +92,10 @@ iframe.centered {
 	width: 30px;
 }
 
+#caricature {
+	width: 225px;
+}
+
 .icon {
 	margin: 0 auto;
 }
