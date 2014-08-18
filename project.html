@@ -30,14 +30,18 @@
 
 		<div class="project_content" id="personal_content">
 			<h1 class="center" id="project_content_title"> <b> "Helping the blind read text on the go." </b> </h1>
-			<h2 id="project_content_subtext1"> The FingerReader makes it possible </h2>
+			<h2 > The FingerReader makes it possible </h2>
 			<img class="normal centered" src = "eyering_final.jpg" align="middle" id= "fingerreader-1" style="max-width:65%;">
-			<p id="project_content_text1"> The FingerReader is a <b> text-reading assistive device for the blind. </b> It is designed to be a portable device that can assist blind people to read and scan text in everyday situations. </p>
+			<h2 class = "purple"> <b>What is it? </b> </h2>
+			<p id="project_content_text1"> The FingerReader is a <b> text-reading assistive device for the blind. </b> It is designed to be a portable device that can assist blind people in reading text in everyday situations. </p>
 			<p id="project_content_text2"> With just the point of a finger, visually impaired users can have menus, books, forms, and so much more read to them in real time. The device allows the user the freedom to read full paragraphs, scan through lines to identify content of interest, and navigate through multiple pages and types of text with ease. </p>
 			<p id="project_content_text3"> The device provides vibration and tonal feedbacks to help guide the user through a page of text. A vibration signal is triggered at the beginning and end of every line, and tones help alert the user whenever he or she strays off of the line. </p>
 			<img class="normal centered" id= "fingerreader-2" src = "fingerreader_cad.png" align="middle" style="max-width:65%;">
-			<p id="project_content_text4"> The ring is a dual-material 3D printed device that allows for sizing adjustments and vibration dampening using a rubbery material on both sides of the ring. Through multiple user studies with blind and visually impaired participants, the design was tailored to maximize user comfort and distinguishability of haptic feedbacks. An on-board microcontroller was programmed to enable vibration feedbacks and LEDs for reading in dark areas. A camera on the device streams a video of the text in view to be processed and translated from text to speech so blind users can hear exactly what is on the page in front of them. </p> </br>
-			<h2 class="purple" id="project_content_subtext2"> Interested in learning more? Check out these articles! </h2>
+			<h2 class = "purple"> <b>The Design Process </b> </h2>
+			<p id="project_content_text4"> The ring is a dual-material 3D printed device that allows for sizing adjustments and vibration dampening using a rubberized material on both sides of the ring. Through multiple user studies with blind and visually impaired participants, the design was tailored to maximize user comfort and distinguishability of haptic feedbacks. An on-board microcontroller was programmed to enable vibration feedbacks and LEDs for reading in dark areas. A camera on the device streams a video of the text to be processed and translated from text to speech so blind users can hear exactly what is on the page in front of them. </p>
+			<h2 class = "purple"> <b>Lessons Learned </b> </h2>
+			<p id="project_content_text4"> <b> The importance of user feedback: </b> Without our generous users, FingerReader would be no more than a  </p> </br>
+			<h2 class="purple"> <b> Interested in learning more? Check out these articles!</b> </h2>
 			<p class="center" id="project_content_text5"> <a href="http://www.huffingtonpost.com/2014/07/08/fingerreader-read-blind-mit_n_5565898.html?ncid=fcbklnkushpmg00000042"> http://www.huffingtonpost.com/2014/07/08/fingerreader-read-blind-mit_n_5565898.html?ncid=fcbklnkushpmg00000042 </a></p>
 			<p class="center" id="project_content_text6"> <a href="http://newsfeed.time.com/2014/02/20/mit-scientists-design-ring-to-help-visually-impaired-people-read/"> http://newsfeed.time.com/2014/02/20/mit-scientists-design-ring-to-help-visually-impaired-people-read/ </a></p>
 
@@ -70,19 +74,19 @@
 	$(window).resize(function() {
 		var viewportWidth = $(window).width()
 		var newImageDimension = String(viewportWidth/3.24);
-		var fontSize = String(viewportWidth*0.023)+"px";
-		var fontSize2 = String(viewportWidth*0.012)+"px";
-		var fontSize3 = String(viewportWidth*0.015)+"px";
+		// var fontSize = String(viewportWidth*0.023)+"px";
+		// var fontSize2 = String(viewportWidth*0.012)+"px";
+		// var fontSize3 = String(viewportWidth*0.015)+"px";
 		$(".project_content").width(viewportWidth/1.73);
 		for (var i=0; i<=2; i++) {	
 			$("#fingerreader-"+i).attr('width', newImageDimension);
 			$("#fingerreader-"+i).attr('height', newImageDimension);
 		}
-		for (var i=0; i<=6; i++) {	
-			$("#project_content_text"+i).css("font-size", fontSize2);
-		}
-		$("#project_content_title").css("font-size", fontSize);
-		$("#project_content_subtext1").css("font-size", fontSize3);
-		$("#project_content_subtext2").css("font-size", fontSize3);
-	});
+	// 	for (var i=0; i<=6; i++) {	
+	// 		$("#project_content_text"+i).css("font-size", fontSize2);
+	// 	}
+	// 	$("#project_content_title").css("font-size", fontSize);
+	// 	$("#project_content_subtext1").css("font-size", fontSize3);
+	// 	$("#project_content_subtext2").css("font-size", fontSize3);
+	// });
 </script>
