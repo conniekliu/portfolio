@@ -5,8 +5,30 @@
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="bootstrap.js">
+		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
+	<body background = "gplaypattern_@2X.png">
 	<body>
+<<<<<<< HEAD
+		<div class="container">
+<!-- 			<div style="float:left;"> -->
+			<div class="header-wrapper">
+				<h1 class="name" id="full-name"><b>CONNIE LIU</b></h1>
+			</div>
+			<div class="navbar">
+				<li>
+					<a href="home.html">PROJECTS</a>
+				</li>
+				<li>
+					<a href="personal.html">PERSONAL</a>
+				</li>
+				<li>
+					<a href="resume.html">RESUME</a> </h2>
+				</li>
+			</div>
+=======
 		<header>
 			<h1 id="full-name">CONNIE LIU</h1>
 			<nav>
@@ -27,6 +49,7 @@
 				</div>
 			</nav>
 		</header>
+>>>>>>> origin/master
 		<div class="project_content" id="personal_content">
 			<h1 class="center" id = "project_content_title_lovehandles"> <b> FAST AND FURIOUS </b> </h1>
 			<h2 class="purple" id ="project_content_subtext_lovehandles"> with a dash of love (handles) </h2>
@@ -35,9 +58,25 @@
 			<p id = "project_content_text_lovehandles2"> Packed in that small(ish) exterior is quite a powerhouse of 36V of battery, a ___ motor, and enough power to max out at a solid 20 mph with a medium-female-sized rider. </p>
 			<p id = "project_content_text_lovehandles3"> We were posed with a few design constraints:our car could have no more than four 12V batteries, it could not exceed 20 mph (for safety reasons), it needed to be able to carry a single rider, and we needed to stay within a budget of $400. With these parameters in mind, we set out on our merry ways to conceptualize, design, and finally build what is now Lovehandles. </p>
 			<img class="normal centered" id ="lovehandles-2" src = "#" align="middle" style="max-width:65%;">
-			<p id = "project_content_text_lovehandles4"> As you might expect with two novice go kart builders, Rachel and i hit many roadblocks along the way as we built our baby. </p>
+			<p id = "project_content_text_lovehandles4"> As you might expect with two novice go kart builders, Rachel and I hit many roadblocks along the way as we built our baby. </p>
 
 		</div>
+		<div class="footer">
+			<div class="row">
+				<div class="iconbar">
+					<div class="icon col-md-4">
+						<a href = "https://twitter.com/ckliu95"><img id="social-icon" src = "twitter.jpg"></a>
+					</div>
+					<div class="icon col-md-4">
+						<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img id="social-icon" src = "linkedin.png"></a>
+					</div>
+					<div class="icon col-md-4">
+						<a href="mailto:ckliu@mit.edu?Subject=Hello!" target="_top"> <img id="social-icon" src = "gmail.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	</body>
 </html>
 
@@ -50,18 +89,10 @@
 	$(window).resize(function() {
 		var viewportWidth = $(window).width()
 		var newImageDimension = String(viewportWidth/3.24);
-		var fontSize = String(viewportWidth*0.023)+"px";
-		var fontSize2 = String(viewportWidth*0.012)+"px";
-		var fontSize3 = String(viewportWidth*0.015)+"px";
 		$(".project_content").width(viewportWidth/1.73);
 		for (var i=0; i<=2; i++) {	
 			$("#lovehandles-"+i).attr('width', newImageDimension);
 			$("#lovehandles-"+i).attr('height', newImageDimension);
 		}
-		for (var i=0; i<=4; i++) {	
-			$("#project_content_text_lovehandles"+i).css("font-size", fontSize2);
-		}
-		$("#project_content_title_lovehandles").css("font-size", fontSize);
-		$("#project_content_subtext_lovehandles").css("font-size", fontSize3);
 	});
 </script>
