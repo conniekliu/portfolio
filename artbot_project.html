@@ -5,28 +5,28 @@
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="bootstrap.js">
+		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<header>
-			<h1 id="full-name">CONNIE LIU</h1>
-			<nav>
-				<ul>
-					<li class="selected"><a href="index.html">PROJECTS</a></li>
-					<li><a href="personal.html">PERSONAL</a></li>
-					<li><a href="#">RESUME</a></li>
-				</ul>
-				<div class="icon" id="icontwitter">
-					<a href = "https://twitter.com/ckliu95"><img id="social-icon" src = "twitter.jpg" width = "30" height = "30"></a>
-				</div>
-				<div class="icon" id="iconlinkedin">
-					<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img id="social-icon" src = "linkedin.png" width = "30" height = "30"></a>
+		<div class="container">
+<!-- 			<div style="float:left;"> -->
+			<div class="header-wrapper">
+				<h1 class="name" id="full-name"><b>CONNIE LIU</b></h1>
+			</div>
+			<div class="navbar">
+				<li>
+					<a href="index.html">PROJECTS</a>
+				</li>
+				<li>
+					<a href="personal.html">PERSONAL</a>
+				</li>
+				<li>
+					<a href="resume.html">RESUME</a> </h2>
+				</li>
+			</div>
 
-				</div>
-				<div class="icon" id="icongmail">
-					<img id="social-icon" src = "gmail.png" width = "30" height = "30">
-				</div>
-			</nav>
-		</header>
 		<div class="project_content">
 			<h1 class="center" id="project_content_title_artbot"> <b> ARTBOT: A ROBOTIC ARTIST FOR KIDS </b> </h1>
 			<h2 class="purple" id="project_content_subtext_artbot"> An Introduction to Robotics </h2>
@@ -34,6 +34,22 @@
 			<p id="project_content_text_artbot"> This is a low-cost, easy-to-make robot for students of all ages as an easy way to learn about robotics. Using a standard paper cup, three markers as legs, a vibrating motor, and batteries, the ArtBot can walk along the page and create an "artpiece". By offsetting the battery weight on the top of the cup, the students could make the ArtBot walk in various random patterns. Students experimented with different weight distributions, motors, and number of markers to see the differences in the pictures that their robots drew. Over 200 student visitors made these robots at the 2013 Cambridge Science Fair and we intend to use this design for many more outreach events in the future. </p>
 			<p>  </p>
 
+
+		<div class="footer">
+			<div class="row">
+				<div class="iconbar">
+					<div class="icon col-md-4">
+						<a href = "https://twitter.com/ckliu95"><img id="social-icon" src = "twitter.jpg"></a>
+					</div>
+					<div class="icon col-md-4">
+						<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img id="social-icon" src = "linkedin.png"></a>
+					</div>
+					<div class="icon col-md-4">
+						<a href="mailto:ckliu@mit.edu?Subject=Hello!" target="_top"> <img id="social-icon" src = "gmail.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		</div>
 	</body>

@@ -52,6 +52,7 @@ li {
 p {
 	font-family: "Raleway", sans-serif;
 	line-height: 140%;
+	text-align: left;
 }
 
 p.center {
@@ -166,6 +167,10 @@ iframe.centered {
 	padding: 20px;
 }
 
+.resume {
+	text-align: center;
+	margin: 0 auto;
+}
  
 /*body {
 	background-color: gray !important;

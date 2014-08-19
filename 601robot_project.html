@@ -5,35 +5,51 @@
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="bootstrap.js">
+		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<header>
-			<h1 id="full-name">CONNIE LIU</h1>
-			<nav>
-				<ul>
-					<li class="selected"><a href="index.html">PROJECTS</a></li>
-					<li><a href="personal.html">PERSONAL</a></li>
-					<li><a href="#">RESUME</a></li>
-				</ul>
-				<div class="icon" id="icontwitter">
-					<a href = "https://twitter.com/ckliu95"><img id="social-icon" src = "twitter.jpg" width = "30" height = "30"></a>
-				</div>
-				<div class="icon" id="iconlinkedin">
-					<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img id="social-icon" src = "linkedin.png" width = "30" height = "30"></a>
-
-				</div>
-				<div class="icon" id="icongmail">
-					<img id="social-icon" src = "gmail.png" width = "30" height = "30">
-				</div>
-			</nav>
-		</header>
+		<div class="container">
+<!-- 			<div style="float:left;"> -->
+			<div class="header-wrapper">
+				<h1 class="name" id="full-name"><b>CONNIE LIU</b></h1>
+			</div>
+			<div class="navbar">
+				<li>
+					<a href="index.html">PROJECTS</a>
+				</li>
+				<li>
+					<a href="personal.html">PERSONAL</a>
+				</li>
+				<li>
+					<a href="resume.html">RESUME</a> </h2>
+				</li>
+			</div>
 		<div class="project_content">
-			<h1 class="center" id="project_content_title_601"> <b> AUTONOMOUS NAVIGATION BOT </b> </h1>
-			<h2 class="purple" id="project_content_subtext_601"> Search algorithms and maze navigation </h2>
+			<h1 class="center"> <b> AUTONOMOUS NAVIGATION BOT </b> </h1>
+			<h2 class="purple"> Search algorithms and maze navigation </h2>
 			<img class="normal centered" id = "601robot" src = "601robot.jpg" align="middle" style="max-width:65%;">
 			<p id ="project_content_text_601"> This autonomous robot was the final project for MIT's Introduction to Electrical Engineering and Computer Science Class (6.01). It was designed with optimized search algorithms to traverse a maze by itself. In order to optimize performance, the robot needed to be able to distinguish noise from actual wall detection. Using a Bayesian update process to update present and past states of the robot and sonar sensors to detect the walls, our robot was one of five to complete the full course of the maze. </p>
 
 		</div>
+
+		<div class="footer">
+			<div class="row">
+				<div class="iconbar">
+					<div class="icon col-md-4">
+						<a href = "https://twitter.com/ckliu95"><img id="social-icon" src = "twitter.jpg"></a>
+					</div>
+					<div class="icon col-md-4">
+						<a href = "https://www.linkedin.com/pub/connie-liu/56/404/b58"><img id="social-icon" src = "linkedin.png"></a>
+					</div>
+					<div class="icon col-md-4">
+						<a href="mailto:ckliu@mit.edu?Subject=Hello!" target="_top"> <img id="social-icon" src = "gmail.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	</body>
 </html>
 
