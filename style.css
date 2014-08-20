@@ -112,7 +112,7 @@ iframe.centered {
 }
 
 .box {
-
+	max-height: 100%;
 }
 
 .project_content {
